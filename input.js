@@ -4,7 +4,7 @@ let connection;
 
 const { connect } = require("./client");
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   const stdin = process.stdin;
   connection = conn;
   stdin.setRawMode(true);
@@ -15,30 +15,35 @@ const setupInput = function (conn) {
 };
 
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
   // u0003 maps to ctrl+c input
   if (key === '\u0003') {
     process.exit();
-    }
+  }
   
   //binding keys
   if (key === 'w') {
     connection.write("Move: up");
-    }
+  }
 
   if (key === 'a') {
     connection.write("Move: left");
-    }    
+  }
 
   if (key === 's') {
     connection.write("Move: down");
-    }
+  }
 
   if (key === 'd') {
     connection.write("Move: right");
-    }
+  }
+
+  // add a custom message
+  if (key === "h") {
+    connection.write("Say: Send help plez");
+  }
 };
 
 module.exports = {
   setupInput,
-}
+};
