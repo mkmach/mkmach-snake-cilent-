@@ -9,7 +9,9 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["gif from multiplayer page"](https://raw.githubusercontent.com/taniarascia/snek/master/snek.gif)
+!["gif 1"](https://upload.wikimedia.org/wikipedia/commons/5/55/Snake_can_be_completed.gif)
+
+!["gif 2"](https://raw.githubusercontent.com/taniarascia/snek/master/snek.gif)
 
 
 ## Getting Started
